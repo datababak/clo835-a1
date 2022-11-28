@@ -42,11 +42,11 @@ jobs:
          IMAGE_TAG: ${{ github.sha }}
         run: |
           # Building Docker image for mysql
-          docker build -f Dockerfile_mysql -t $REGISTRY/a1-db:v1.0 .
-          docker push $REGISTRY/a1-db:v1.0
+          docker build -f Dockerfile_mysql -t $REGISTRY/a1-db:v2.0 .
+          docker push $REGISTRY/a1-db:v2.0
           # Building docker for webapp
-          docker build -f Dockerfile -t $REGISTRY/a1-app:v1.0 .
-          docker push $REGISTRY/a1-app:v1.0
+          docker build -f Dockerfile -t $REGISTRY/a1-app:v2.0 .
+          docker push $REGISTRY/a1-app:v2.0
 
 
 
